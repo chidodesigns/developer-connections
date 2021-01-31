@@ -1,3 +1,5 @@
 react-notes.txt
 coverage
 node_modules/
+config/default.json
+.env
