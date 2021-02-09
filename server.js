@@ -1,5 +1,7 @@
 //  Express
 const express = require("express")
+    //  Cors
+const cors = require('cors')
     //  Database
 const connectDB = require("./config/db")
     //  Server Port
@@ -14,6 +16,8 @@ app.use(express.json({ extended: false }))
 app.get("/", (req, res) => {
     res.send("API Running")
 })
+
+app.use(cors())
 
 //  Define Routes
 app.use("/api/users", require("./routes/api/users"))

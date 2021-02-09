@@ -5,6 +5,8 @@ const { check, validationResult } = require("express-validator")
     //  Config Vars
 const dotenv = require("dotenv")
 dotenv.config()
+    //  Cors
+const cors = require('cors')
     //  JWT Token 
 const jwt = require('jsonwebtoken')
     //  Password Encryption
@@ -15,6 +17,7 @@ const auth = require('../../middleware/auth')
 const User = require("../../models/User")
 
 const router = express.Router()
+router.use(cors())
 
 //  @route      GET api/auth
 //  @desc       Test Route

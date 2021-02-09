@@ -1,6 +1,8 @@
 const express = require("express")
 const { check, validationResult } = require("express-validator")
+const cors = require('cors')
 const router = express.Router()
+router.use(cors())
     //  Auth
 const auth = require('../../middleware/auth')
     //  Post Model

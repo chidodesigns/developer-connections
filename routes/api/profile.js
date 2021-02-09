@@ -2,6 +2,8 @@
 const express = require("express")
 const { check, validationResult } = require("express-validator")
 const router = express.Router()
+const cors = require('cors')
+router.use(cors())
     //  ENV Variables
 const dotenv = require("dotenv")
 dotenv.config()
