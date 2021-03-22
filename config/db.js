@@ -1,10 +1,10 @@
 const mongoose = require("mongoose")
-const config = require("config")
+
     //  Production App Env
 const dotenv = require("dotenv")
 dotenv.config()
     //  Local App ENV
-const db = config.get("mongoURI")
+
 
 const connectDB = async() => {
     try {
