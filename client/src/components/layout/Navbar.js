@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { logout } from '../../actions/auth'
+//  Import Navbar Classes
+import classes from './Navbar.module.css';
 
 export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
@@ -46,10 +48,10 @@ export const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     )
 
     return (
-        <nav className="navbar bg-dark">
+        <nav className={`${classes.navbar} bg-dark`}>
             <h1>
                 <Link to="/">
-                    <i className="fas fa-code"></i> DevConnector
+                    <i className="fas fa-code"></i> selftaughtcode.co
                 </Link>
             </h1>
             {!loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}

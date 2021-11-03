@@ -1,0 +1,21 @@
+
+/* Landing Page */
+
+.landing {
+    position: relative;
+    background: url('../../img/selftaughtcode.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.landingInner {
+    color: #fff;
+    height: 100%;
+    width: 50%;
+    padding: 10% 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

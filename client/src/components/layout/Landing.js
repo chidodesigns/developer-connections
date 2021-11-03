@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
-
+import classes from './Landing.module.css'
 
 export const Landing = ({ isAuthenticated }) => {
 
@@ -11,19 +11,21 @@ export const Landing = ({ isAuthenticated }) => {
     }
 
     return (
-        <section className="landing">
+        <section className={classes.landing}>
             <div className="dark-overlay">
-                <div className="landing-inner">
-                    <h1 className="x-large">Developer Connector</h1>
+                <div className={classes.landingInner}>
+                    <h1 className="x-large"><span className="text-primary">selftaughtcode</span>.co</h1>
+                    <div>
                     <p className="lead">
-                        Create a developer profile/portfolio, share posts and get help from
-                        other developers
-            </p>
+                        A Sandbox to <strong className="text-primary">connect</strong> and <strong className="text-primary">learn</strong> from DIY developers whilst you learn to code.
+                    </p>
+                    </div>
                     <div className="buttons">
                         <Link to="/register" className="btn btn-primary">Sign Up</Link>
                         <Link to="/login" className="btn btn-light">Login</Link>
                     </div>
                 </div>
+
             </div>
         </section>
     )

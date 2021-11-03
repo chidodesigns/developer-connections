@@ -14,6 +14,14 @@ const path = require('path')
 const app = express()
     //  DB Connection
 connectDB()
+
+/**
+ * @Todo Fix App Request Logger: It is blocking requests
+ */
+
+// const AppLogger = require('./libraries/Logger');
+// app.use(AppLogger.getAllRequests)
+
     //  Init Middleware
 app.use(express.json({ extended: false }))
 

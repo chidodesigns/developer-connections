@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
 /* Global Styles */
 
 :root {
-    --primary-color: #17a2b8;
-    --dark-color: #343a40;
+    --primary-color: #3785D7;
+    --dark-color: #F06112;
     --light-color: #f4f4f4;
-    --danger-color: #dc3545;
+    --danger-color: #d11a2a;
     --success-color: #28a745;
+    --hover-state-color:#CAE4F6
 }
 
 * {
@@ -14,10 +17,12 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
+html, body {
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
+    height: 100%;
     line-height: 1.6;
+    letter-spacing: .5px;
     background-color: #fff;
     color: #333;
 }
@@ -45,8 +50,21 @@ img {
     padding: 0 2rem;
     margin-top: 6rem;
     margin-bottom: 3rem;
+    height: 90vh;
 }
 
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+
+.flex-container__item-50{
+    width: 50%;
+}
+
+.container-80-vh{
+    height: 80vh;
+}
 
 /* Text Styles*/
 
@@ -153,13 +171,16 @@ img {
     display: inline-block;
     background: var(--light-color);
     color: #333;
-    padding: 0.4rem 1.3rem;
+    padding: 15px 30px;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     margin-right: 0.5rem;
     transition: opacity 0.2s ease-in;
     outline: none;
+    /**additional styles*/
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .badge {
@@ -260,64 +281,6 @@ img {
 }
 
 
-/* Forms */
-
-.form .form-group {
-    margin: 1.2rem 0;
-}
-
-.form .form-text {
-    display: block;
-    margin-top: 0.3rem;
-    color: #888;
-}
-
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
-.form select,
-.form textarea {
-    display: block;
-    width: 100%;
-    padding: 0.4rem;
-    font-size: 1.2rem;
-    border: 1px solid #ccc;
-}
-
-.form input[type='submit'],
-button {
-    font: inherit;
-}
-
-.form .social-input {
-    display: flex;
-}
-
-.form .social-input i {
-    padding: 0.5rem;
-    width: 4rem;
-}
-
-.form .social-input i.fa-twitter {
-    color: #38a1f3;
-}
-
-.form .social-input i.fa-facebook {
-    color: #3b5998;
-}
-
-.form .social-input i.fa-instagram {
-    color: #3f729b;
-}
-
-.form .social-input i.fa-youtube {
-    color: #c4302b;
-}
-
-.form .social-input i.fa-linkedin {
-    color: #0077b5;
-}
 
 .table th,
 .table td {
@@ -328,62 +291,6 @@ button {
 .table th {
     background: var(--light-color);
 }
-
-
-/* Navbar */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7rem 2rem;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    border-bottom: solid 1px var(--primary-color);
-    opacity: 0.9;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 0.45rem;
-    margin: 0 0.25rem;
-}
-
-.navbar a:hover {
-    color: var(--primary-color);
-}
-
-.navbar .welcome span {
-    margin-right: 0.6rem;
-}
-
-
-/* Landing Page */
-
-.landing {
-    position: relative;
-    background: url('./img/showcase.jpg') no-repeat center center/cover;
-    height: 100vh;
-}
-
-.landing-inner {
-    color: #fff;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 
 /* Profiles Page */
 
