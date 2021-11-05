@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {useState} from 'react';
 //  Enables Us To Work With Redux
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
@@ -43,7 +43,7 @@ function Register({setAlert, register, isAuthenticated}) {
       <div className="flex-container container-80-vh">
         <div className="flex-container__item-50">
         <p className="lead">
-            <strong className="text-primary">Selftaughtcode.co</strong> is a platform that connects <strong className="text-primary">DIY</strong> web developers.
+            <strong className="text-primary">Puerto Veijo Jobs</strong> is a platform that connects <strong className="text-primary">DIY</strong> web developers.
         </p>
         </div>
         <div className="flex-container__item-50">

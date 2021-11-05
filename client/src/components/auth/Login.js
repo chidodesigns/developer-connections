@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {useState} from 'react';
 import {Link, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {PropTypes} from 'prop-types';
@@ -32,7 +32,7 @@ function Login({login, isAuthenticated}) {
 
       <div className="flex-container__item-50">
       <p className="lead">
-            <strong className="text-primary">Selftaughtcode.co</strong> is a platform that connects <strong className="text-primary">DIY</strong> web developers.
+            <strong className="text-primary">Puerto Veijo Jobs</strong> is a platform that connects <strong className="text-primary">DIY</strong> web developers.
         </p>
       </div>
 

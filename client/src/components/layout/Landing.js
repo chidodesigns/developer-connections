@@ -14,7 +14,7 @@ export const Landing = ({ isAuthenticated }) => {
         <section className={classes.landing}>
             <div className="dark-overlay">
                 <div className={classes.landingInner}>
-                    <h1 className="x-large"><span className="text-primary">selftaughtcode</span>.co</h1>
+                    <h1 className="x-large"><span className="text-primary">Puerto Veijo</span></h1>
                     <div>
                     <p className="lead">
                         A Sandbox to <strong className="text-primary">connect</strong> and <strong className="text-primary">learn</strong> from DIY developers whilst you learn to code.
